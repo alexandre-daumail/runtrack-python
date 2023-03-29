@@ -1,7 +1,5 @@
-import sys
-sys.path.append('src\jour02')
+from src.jour02.job0.personne import Personne
 
-from job0.personne import Personne
 
 class Livre:
     def __init__(self, titre, auteur):
@@ -26,6 +24,7 @@ class Auteur(Personne):
         livre = Livre(titre, self)
         self.oeuvre.append(livre)
         return livre
+
 
 # Instanciation de personnes avec des valeurs de construction différentes
 personne1 = Personne("Doe", "John")
