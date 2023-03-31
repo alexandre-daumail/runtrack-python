@@ -9,6 +9,7 @@ for i in range(len(maze)):
     if maze[i][-2] == ".":
         end_pos = (i, len(maze[i]) - 3)
 
+
 # Fonction pour trouver les voisins d'une position donnée dans le labyrinthe
 def neighbors(pos):
     row, col = pos
@@ -22,6 +23,7 @@ def neighbors(pos):
     if col < len(maze[row]) - 3 and maze[row][col + 1] == ".":
         result.append((row, col + 1))
     return result
+
 
 # Algorithme de recherche en largeur pour trouver le chemin le plus court
 from queue import Queue
